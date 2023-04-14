@@ -1,0 +1,26 @@
+@import url("reset.css");
+
+
+
+
+:root {
+
+    --fonte-principal: 'DynaPuff', cursive;
+    --cor-fundo: #4FA095;
+    --cor-primaria: #F6F6C9;
+}
+
+
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
