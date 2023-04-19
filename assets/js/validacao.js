@@ -4,6 +4,12 @@ function verificaChuteValido (chute) {
     const numero = +chute
 
     if (chuteInvalido(numero)) {
+        if (chute.toUpperCase() === "GAME OVER") {
+            document.body.innerHTML = `
+            <h2>FIM DE JOGO!</h2>
+            <button id="jogar-novamente" class="btn-jogar">Jogar Novamente</button>
+            `
+        }
         elementoChute.innerHTML +='<div>Valor Inválido</div>'
         return
     }
